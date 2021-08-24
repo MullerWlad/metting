@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head> 
+    <meta charset="utf-8">
+    <title>Meeting</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./src/images/sprites/picture.svg.css">
+    <link rel="stylesheet" href="./src/resource/mixins/font.css">
+    <link rel="short icon" href="./src/images/sprites/svg/star.svg">
+    <style>
+      html{overflow-x:hidden}body{padding:0;margin:0}body::-webkit-scrollbar{width:0}a{text-decoration:none}.text-align{text-align:center}.centred{margin:0 auto}.font-color{color:#18216D}.font-clear-color{color:white}.font-fog{opacity:0.6}.background-navy{background:#18216D}.background-sal{background:#00ECD0}.font-bold{font-weight:bold}.display-vertical{display:flex;flex-direction:column;flex-wrap:wrap}.display-horison-between{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center}.display-vertical-between{display:flex;flex-direction:column;justify-content:space-between;flex-wrap:wrap;align-items:center}.display-horison-around{display:flex;justify-content:space-around;flex-wrap:wrap;align-items:center}.display-vertical-around{display:flex;flex-direction:column;justify-content:space-around;flex-wrap:wrap;align-items:center}.display-horison-center{display:flex;justify-content:center;flex-wrap:wrap;align-items:center}.display-vertical-center{display:flex;flex-direction:column;justify-content:center;flex-wrap:wrap;align-items:center}.img-block{background-repeat:no-repeat;background-position:center center;background-size:cover}.absolute{position:absolute}.no-pads{margin:0;padding:0}.z-49{z-index:49}.z-50{z-index:50}
+      .body-mask{width:100%;min-height:100vh;background:white}.font-size-17{font-size:17px}.font-size-18{font-size:18px}.font-size-48{font-size:48px}@media screen and (max-width: 800px){.font-size-48{font-size:24px}}.font-size-36{font-size:36px}.font-size-16{font-size:16px}.font-size-60{font-size:60px}.font-size-20{font-size:20px}.font-size-24{font-size:24px}.font-line-50{line-height:50px}.font-line-60{line-height:60px}.font-line-30{line-height:30px}.font-line-26{line-height:26px}.font-line-28{line-height:28px}.font-weight-500{font-weight:500}.font-weight-400{font-weight:400}.font-weight-600{font-weight:600}.font-weight-700{font-weight:700}.mobile-menu{display:none;min-width:40px;min-height:40px}@media screen and (max-width: 800px){.mobile-menu{display:inline;margin-right:-30vw}}.topbar{position:absolute;height:80px;z-index:100}@media screen and (max-width: 800px){.topbar{height:60px}}@media screen and (max-width: 800px){.topbar .menu-topbar-block{display:none}}@media screen and (max-width: 800px){.topbar .topbar-funcs-block{display:none}}.button{border-radius:6px;width:136px;height:52px}.betweens-50{margin:0 25px 0 25px}.left-70{margin-left:100px}.right-70{margin-right:100px}.top-50{margin-top:50px}.top-20{margin-top:20px}.cursor{cursor:pointer;transition-duration:0.5s}.cursor:hover{opacity:0.8}.width-1530{width:1530px}@media screen and (max-width: 800px){.width-1530{width:100vw}}.height-all{height:100%}.icons-block{width:72px;height:72px}@media screen and (max-width: 800px){.feature-block{margin-top:20px}}
+      .blured-block{position:absolute;width:766px;height:766px;background:#FF523D;opacity:0.05;filter:blur(150px);left:-149px;top:-147px;z-index:48}.topbar-betweens{width:200px;height:50px;background:red}.logo-size{width:97px;height:27px}@media screen and (max-width: 800px){.logo-size{margin-left:-30vw}}.group-size{width:786px;height:518.35px;left:617px;top:126.76px}.company-size{width:1000px;height:31.5px}.hestars-block{width:16px;height:15px}.heading-block{width:507px}.info-block{margin-left:-600px}.sal-button{width:180px;height:66px}.start-for-free{height:750px}.greats{height:270px}.greats-pack-block{width:100px}.without-companies-block{width:1100px}.features{margin-top:100px}.features-text{width:320px}.icons-block-special{width:55px}.mobile-menu-line{width:28px;height:2.31px;background:#494949;margin:25% auto}
+
+    </style>
+  </head>
+  <body class="display-vertical-between">
+    <div class="blured-block"></div>
+    <div class="topbar display-horison-around width-1530">
+      <div class="img-block logo left-70 logo-size"></div>
+      <div class="mobile-menu cursor">
+        <div class="mobile-menu-line"></div>
+        <div class="mobile-menu-line"></div>
+      </div>
+      <div class="menu-topbar-block display-horison-between right-70">
+        <p class="font-size-16 font-color inter font-weight-500 cursor betweens-50 cursor">Home </p>
+        <p class="font-size-16 font-color inter font-weight-500 cursor betweens-50 cursor">Feature </p>
+        <p class="font-size-16 font-color inter font-weight-500 cursor betweens-50 cursor">Pricing </p>
+        <p class="font-size-16 font-color inter font-weight-500 cursor betweens-50 cursor">Solution </p>
+        <p class="font-size-16 font-color inter font-weight-500 cursor betweens-50 cursor">Faq</p>
+      </div>
+      <div class="topbar-funcs-block display-horison-between left-70"><a class="font-size-18 font-color inter font-weight-500 cursor">Sign in </a>
+        <p class="button cursor font-size-17 font-clear-color background-navy inter font-weight-500 display-vertical-around betweens-50">Download</p>
+      </div>
+    </div>
+    <div class="body-mask"> 
+      <div class="start-for-free display-horison-around width-1530">
+        <div class="display-vertical absolute z-50 info-block">
+          <p class="font-color font-weight-600 font-size-48 font-line-60 inter no-pads heading-block">The best video online meeting software.</p>
+          <p class="font-color font-weight-400 font-size-17 font-line-28 inter heading-block">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
+          <p class="button cursor font-size-17 font-color background-sal inter font-weight-500 display-vertical-around sal-button">Start for free</p>
+        </div>
+        <div class="img-block group-picture group-size absolute z-49"></div>
+      </div>
+      <div class="greats display-horison-around width-1530 centred">
+        <div class="display-horison-between without-companies-block">
+          <p class="font-color font-weight-600 font-size-36 font-line-50 inter no-pads heading-block">Collaborate 2M+ startup and international companiesueses since 2018 </p>
+          <div class="display-horison-between">
+            <div class="display-vertical">
+              <p class="font-color font-weight-700 font-size-60 inter no-pads">15k</p>
+              <div class="display-horison-between greats-pack-block">
+                <div class="img-block heart-picture hestars-block"></div>
+                <div class="img-block heart-picture hestars-block"></div>
+                <div class="img-block heart-picture hestars-block"></div>
+                <div class="img-block heart-picture hestars-block"></div>
+                <div class="img-block heart-picture hestars-block"></div>
+              </div>
+              <p class="font-color font-weight-400 font-size-16 inter">Active Downloads</p>
+            </div>
+            <div class="display-vertical left-70">
+              <p class="font-color font-weight-700 font-size-60 inter no-pads">4.9</p>
+              <div class="display-horison-between greats-pack-block">
+                <div class="img-block star-picture hestars-block"></div>
+                <div class="img-block star-picture hestars-block"></div>
+                <div class="img-block star-picture hestars-block"></div>
+                <div class="img-block star-picture hestars-block"></div>
+                <div class="img-block star-picture hestars-block"></div>
+              </div>
+              <p class="font-color font-weight-400 font-size-16 inter">2,938 Rating</p>
+            </div>
+          </div>
+        </div>
+        <div class="display-horison-between">
+          <div class="img-block companies company-size"></div>
+        </div>
+      </div>
+      <div class="features display-vertical-around">
+        <div class="display-vertical-around">
+          <p class="font-color font-size-48 font-weight-600 font-line-64 display-vertical-center inter no-pads">Our special features</p>
+          <p class="font-color font-size-16 font-weight-400 font-line-30 inter heading-block text-align">We are familiar with offline speed dating flow so we designed out online platform considering all the requirements</p>
+        </div>
+        <div class="display-horison-around top-50">
+          <div class="display-vertical feature-block">
+            <div class="img-block icons-block ticket-picture"></div>
+            <p class="font-color font-size-24 font-weight-600 inter">Affordable Pricing</p>
+            <p class="font-color font-size-16 font-line-26 inter font-fog no-pads features-text">A dictionary of over 200 Latin words,with a handful of model sentence. structures, to generate Lorem Ipsum</p><a class="font-color font-size-20 font-weight-500 inter cursor top-20">Learn more</a>
+          </div>
+          <div class="display-vertical left-70 right-70 feature-block">
+            <div class="img-block icons-block great-wave-picture icons-block-special"></div>
+            <p class="font-color font-size-24 font-weight-600 inter">Seamless Reliability</p>
+            <p class="font-color font-size-16 font-line-26 inter font-fog no-pads features-text">A dictionary of over 200 Latin words,with a handful of model sentence. structures, to generate Lorem Ipsum</p><a class="font-color font-size-20 font-weight-500 inter cursor top-20">Learn more</a>
+          </div>
+          <div class="display-vertical feature-block">
+            <div class="img-block icons-block great-picture"></div>
+            <p class="font-color font-size-24 font-weight-600 inter">Secure Collaboration</p>
+            <p class="font-color font-size-16 font-line-26 inter font-fog no-pads features-text">A dictionary of over 200 Latin words,with a handful of model sentence. structures, to generate Lorem Ipsum</p><a class="font-color font-size-20 font-weight-500 inter cursor top-20">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="top-50"></div>
+    </div>
+  </body>
+</html>

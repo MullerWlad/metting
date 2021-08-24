@@ -1,0 +1,54 @@
+.group-picture{
+    background-image: url(./svg/group.svg);
+}
+
+.star-picture{
+    background-image: url(./svg/star.svg);
+}
+
+.ticket-picture{
+    background-image: url(./svg/ticket.svg);
+}
+
+.great-picture{
+    background-image: url(./svg/great.svg);
+}
+.great-wave-picture{
+    background-image: url(./svg/great~.svg);
+}
+
+.heart-picture{
+    background-image: url(./svg/heart.svg);
+}
+
+.logo{
+    background-image: url(./svg/logo.svg);
+}
+
+.walmart{
+    background-image: url(./svg/Walmart\ Logo.svg);
+}
+
+.microsoft{
+    background-image: url(./svg/Microsoft\ Logo.svg);
+}
+
+.hubspot{
+    background-image: url(./svg/Hubspot\ Logo.svg);
+}
+
+.google{
+    background-image: url(./svg/Google\ Logo.svg);
+}
+
+.fedex{
+    background-image: url(./svg/FedEx\ Logo.svg);
+}
+
+.airbnb{
+    background-image: url(./svg/Airbnb\ Logo.svg);
+}
+
+.companies{
+    background-image: url(./svg/Companies.svg)
+}

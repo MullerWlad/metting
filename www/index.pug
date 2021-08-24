@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+    head 
+        meta(charset="utf-8")
+        title Meeting
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+        link(rel="stylesheet" href="./src/images/sprites/picture.svg.css")
+        link(rel="stylesheet" href="./src/resource/mixins/font.css")
+        link(rel="short icon" href="./src/images/sprites/svg/star.svg")
+        style
+            include src/css/fixed-properties.min.css
+            include src/css/general-style.min.css
+            include src/css/special-style.min.css
+    body.display-vertical-between
+        .blured-block
+        include ./src/pug/components/topbar
+        .body-mask 
+            include ./src/pug/components/start-for-free
+            include ./src/pug/components/greats
+            include ./src/pug/components/features
+            .top-50
